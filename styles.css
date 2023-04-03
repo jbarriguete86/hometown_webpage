@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+p {
+    text-shadow: 0 0 1px black;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+#header,
+#middle-container,
+#bottom-container {
+    display: flex;
+    margin: auto;
+
+}
+
+.blue-t {
+    color: #1D3557;
+}
+
+/* header part */
+
+#header {
+    background-image: url("https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81Bt5OCcP3L.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 200%;
+    background-position: top;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 157px 127px;
+    color: #FFFFFF;
+}
+
+.header-top-container,
+.header-bottom-container {
+    border-radius: 15px;
+    padding: 5px 12px;
+
+}
+
+.header-top-container {
+    background-color: #1D3557;
+    margin-bottom: 21px;
+
+
+}
+
+.header-bottom-container {
+    background-color: #457B9D;
+    width: 50%;
+
+}
+
+/* middle part */
+#middle-container {
+    background-color: #F1FAEE;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.middle-flex-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: 33.33%;
+    justify-content: space-between;
+
+
+}
+
+.activity-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.p-middle {
+    padding: 20px;
+}
+
+.middle-flex-container:hover {
+    filter: grayscale(45%) hue-rotate(67deg);
+    color: brown;
+    border: 0.5px solid brown;
+    flex-basis: 22%;
+
+}
+
+
+/* bottom part */
+#bottom-container {
+    background-color: #FFFFFF;
+}
+
+#card {
+    width: 400px;
+    height: 294px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0px 6px 0px #1D3557;
+    background-color: #A8DADC;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-item {
+    flex-basis: 50%;
+}
+
+.img-card-div {
+    width: 180px;
+    margin: 0 13px;
+}
+
+.my-image {
+    width: 100%;
+}
+
+.card-text {
+    margin-right: 13px;
+}
+
+.card-text p {
+    font-style: italic;
+}
+
+/* different screen size */
+@media screen and (max-width: 730px) {
+    #header {
+        background-image: url("https://www.pricelesscarrental.com/smsite/npauto_7/media/imgs/14047_cuu.jpg");
+        background-size: 100% 75%;
+        background-position: top;
+    }
+
+    .header-bottom-container {
+        width: 85%;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 561px) {
+    .header-bottom-container h2 {
+        font-size: 16px;
+    }
+}
